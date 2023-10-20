@@ -1,8 +1,18 @@
-/**
- * Practice: Making classes and objects
- *
- * - Find a type of object you have more than one of in your house (eg. clothing, writing tools, etc).
- * - Create a class describing this object type - its properties and methods.
- * - Create several objects using the class.
- * - Test the objecs by calling their properties and using their methods in the console.
- */
+import Cat from "./Cat.js";
+
+const cat = new Cat(
+  "Alisa",
+  "Fold",
+  "3.5",
+  "brown",
+  4,
+  false,
+  "December 13, 2019 15:00:00 PST"
+);
+
+console.log(cat);
+
+cat.newMove(true);
+console.log(cat);
+console.log(cat.alisaAge());
+console.log(cat.alisaAgeMonth());
