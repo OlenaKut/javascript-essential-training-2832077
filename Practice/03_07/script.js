@@ -7,3 +7,22 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+const cat = {
+  name: "Alisa",
+  rase: "Scottish Fold",
+  color: "brown",
+  paws: {
+    front: {
+      left: 1,
+      right: 1,
+    },
+    back: {
+      left: 1,
+      right: 1,
+    },
+  },
+  move: false,
+};
+
+console.log(cat);

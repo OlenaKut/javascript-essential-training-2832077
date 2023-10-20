@@ -21,4 +21,7 @@ const backpack = {
   },
 };
 
+var query = "strapLength";
 console.log("The backpack object:", backpack);
+console.log("The backpack object:", backpack["color"]);
+console.log("The backpack object:", backpack[query].left, backpack[query].right);

@@ -9,18 +9,46 @@
 
 const backpack = {
   name: "Everyday Backpack",
+  newName: function (nameOne) {
+    this.name = nameOne;
+  },
+
   volume: 30,
+  newVolume: function (volumeOne) {
+    this.volume = volumeOne;
+  },
+
   color: "grey",
+  newColor: function (colorOne) {
+    this.color = colorOne;
+  },
+
   pocketNum: 15,
+  newPocketNum: function (changePocketNum) {
+    this.pocketNum = changePocketNum;
+  },
+
   strapLength: {
     left: 26,
     right: 26,
-  },
-  toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
   },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+
+  lidOpen: false,
+  toggleLid: function (lidStatus) {
+    this.lidOpen = lidStatus;
+  },
 };
+
+console.log(backpack);
+
+backpack.newName("RedPack");
+backpack.newVolume(60);
+backpack.newColor("Red");
+backpack.newPocketNum(24);
+
+
+console.log(backpack);
